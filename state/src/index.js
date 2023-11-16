@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Tp from './Tp';
 import reportWebVitals from './reportWebVitals';
+import Count from './count'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Tp/>
-
+    <Count/>
   </React.StrictMode>
 );
 
