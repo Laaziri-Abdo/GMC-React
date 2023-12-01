@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 export default class App extends Component {
   state = {
     person: {
@@ -14,11 +13,10 @@ export default class App extends Component {
     this.setState({ shows: !this.state.shows })
   }
   render() {
-    const { shows } = this.state
     return (
       <div>
         <button onClick={this.handleClick}> Show Profile</button>
-        {shows && (
+        {this.state.shows && (
           <div>
             <h1>{this.state.person.fullName}</h1>
             <p>{this.state.person.bio}</p>

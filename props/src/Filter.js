@@ -1,7 +1,5 @@
-// src/Filter.js
 import React from "react";
-
-const Filter = ({ titleFilter, rateFilter, onTitleChange, onRateChange }) => {
+const Filter = ({ titleFilter,  onTitleChange}) => {
   return (
     <div className="filter">
       <input
@@ -10,12 +8,6 @@ const Filter = ({ titleFilter, rateFilter, onTitleChange, onRateChange }) => {
         value={titleFilter}
         onChange={(e) => onTitleChange(e.target.value)}
       />
-      {/* <input
-        type="number"
-        placeholder="Filter by rating"
-        value={rateFilter}
-        onChange={(e) => onRateChange(e.target.value)}
-      /> */}
     </div>
   );
 };
